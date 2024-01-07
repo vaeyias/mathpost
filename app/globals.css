@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: black;
+  background-color: rgb(209, 124, 39);
+  position: relative;
+
+
+
+}
+
+.navbar{
+  color: white;
+  display: flex;
+  position:relative;
+  font-size:xx-large;
+}
+
+.navbar ul li ::after{
+  content: '';
+  height: 3px;
+  width: 0px;
+  /*the background is thin and creates the underline*/
+  background:white;
+  position: absolute;
+  left: 0;
+  transition: 0.5s;
+  bottom: 0px;
+}
+
+.navbar ul li :hover::after{
+  width:100%;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #6f8da8;
+  cursor: pointer;
+  transition: border-color 0.1s;
+}
+button:hover {
+  border-color: #ffffff;
+}
+
+.container{
+  height: 850px;
+  width: 1000px;
+}
+
+.tensBlock{
+  height: 64px;
+  width: 700px;
+}
