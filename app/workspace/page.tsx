@@ -26,7 +26,8 @@ const router= useRouter();
             <OnesBlock key={i} id={i} containerRef={containerRef}/>
           ))}
       </div>
-      <div className='bg-orange-400 outline text-white flex items-center text-4xl p-4 outline-orange-300 outline-8 w-96 h-96 ml-10 rounded-xl' onDoubleClick={()=> router.push("/solve")}>{searchParams.get('question')}</div>
+
+      <div className='bg-orange-400 outline text-white flex items-center font-normal text-3xl p-4 outline-orange-300 outline-8 w-96 h-96 ml-10 rounded-xl' onDoubleClick={()=> router.push("/solve")}>{searchParams.get('question')}</div>
 
       </div>
       </div>
